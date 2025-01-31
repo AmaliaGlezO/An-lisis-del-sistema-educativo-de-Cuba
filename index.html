@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de la Educación en Cuba</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#" id="general-link">General</a>
+            <a href="#" id="provincias-link">Provincias</a>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="text">
+            <h1>ANÁLISIS DE LA EDUCACIÓN EN CUBA</h1>
+            <p>Cuba ofrece una educación integral y gratuita que abarca desde el círculo infantil hasta la enseñanza superior. Este sistema educativo garantiza el acceso a la formación de calidad a todos los ciudadanos de la isla, promoviendo el desarrollo integral de sus ciudadanos.</p>
+        </div>
+        <div class="image">
+            <img src="ruta-de-la-imagen.jpg" alt="Estudiantes en Cuba">
+        </div>
+    </div>
+    <div class="section" id="general-section">
+        <h2>General</h2>
+        <p>Contenido de la sección General.</p>
+    </div>
+    <div class="section" id="provincias-section">
+        <h2>Provincias</h2>
+        <p>Contenido de la sección Provincias.</p>
+    </div>
+
+    <script>
+        document.getElementById('general-link').addEventListener('click', function() {
+            document.getElementById('general-section').style.display = 'block';
+            document.getElementById('provincias-section').style.display = 'none';
+        });
+
+        document.getElementById('provincias-link').addEventListener('click', function() {
+            document.getElementById('provincias-section').style.display = 'block';
+            document.getElementById('general-section').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
