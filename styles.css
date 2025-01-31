@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .header {
-    background-color: #CCC5B7;
+    background-color: #f0f0f0;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -57,17 +60,53 @@ body {
 }
 
 #container1 {
-    background-color: #fff;
+    background-color: #ff9999;
 }
 
 #container2 {
-    background-color: #CCC5B7;
+    background-color: #99ccff;
 }
 
 #container3 {
-    background-color: #fff;
+    background-color: #99ff99;
 }
 
 #container4 {
-    background-color: #CCC5B7;
+    background-color: #ffcc99;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.analysis-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.analysis {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
