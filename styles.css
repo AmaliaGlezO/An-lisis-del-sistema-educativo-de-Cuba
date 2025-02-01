@@ -29,8 +29,10 @@ body {
 }
 
 .content {
+    background-color: #CCC5B7;
     display: flex;
     padding: 20px;
+    
 }
 
 .content .text {
@@ -94,7 +96,6 @@ body {
     font-size: 18px; /* Tamaño de la letra */
     font-weight: 700;
 }
-
 .buttons {
     margin-bottom: 20px;
 }
