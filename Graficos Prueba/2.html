@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Graduados por Nivel Educativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Análisis de Graduados por Nivel Educativo</h1>
+
+        <!-- Gráfico 1: Línea (Evolución de graduados por nivel) -->
+        <div class="chart-container">
+            <h2>Evolución de Graduados por Nivel Educativo</h2>
+            <canvas id="lineChart"></canvas>
+        </div>
+
+        <!-- Gráfico 2: Barras (Graduados por nivel en el último año) -->
+        <div class="chart-container">
+            <h2>Graduados por Nivel Educativo (2021/22)</h2>
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <!-- Gráfico 3: Donut (Distribución de graduados por nivel) -->
+        <div class="chart-container">
+            <h2>Distribución de Graduados por Nivel Educativo</h2>
+            <canvas id="doughnutChart"></canvas>
+        </div>
+
+        <!-- Gráfico 4: Barras (Educación técnica y profesional) -->
+        <div class="chart-container">
+            <h2>Educación Técnica y Profesional (2021/22)</h2>
+            <canvas id="technicalChart"></canvas>
+        </div>
+
+        <!-- Gráfico 5: Barras (Educación especial y adultos) -->
+        <div class="chart-container">
+            <h2>Educación Especial y Adultos (2021/22)</h2>
+            <canvas id="specialAdultChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
