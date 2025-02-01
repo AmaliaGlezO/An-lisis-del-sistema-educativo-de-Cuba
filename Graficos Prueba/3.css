@@ -39,13 +39,14 @@ h2 {
     margin-bottom: 10px;
 }
 
-.icons {
-    font-size: 24px;
-    margin-top: 10px;
+.bar {
+    display: flex;
+    align-items: flex-end; /* Alinear los iconos en la parte inferior */
+    margin-bottom: 20px;
 }
 
 .icon-img {
     width: 30px; /* Tamaño de las imágenes */
     height: 30px;
-    margin: 5px;
+    margin: 2px; /* Espacio entre iconos */
 }

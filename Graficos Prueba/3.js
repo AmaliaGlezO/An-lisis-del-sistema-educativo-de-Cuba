@@ -32,18 +32,31 @@ function generatePictogram(year) {
     // Mostrar el año seleccionado
     document.getElementById("selected-year").textContent = year;
 
-    // Generar iconos para cada nivel educativo
+    // Crear una barra para cada nivel educativo
     for (const nivel in data.primaria) {
         const estudiantes = data.primaria[nivel][yearIndex];
         if (estudiantes === null || estudiantes === undefined) continue;
 
         const iconCount = Math.round(estudiantes / scale);
         const iconUrl = data.images[nivel]; // Obtener la imagen correspondiente al nivel
-        const icons = Array(iconCount).fill(`<img src="${iconUrl}" class="icon-img" alt="Icono ${nivel}">`).join("");
 
+        // Crear la barra apilada
+        const barDiv = document.createElement("div");
+        barDiv.className = "bar";
+
+        // Añadir los iconos a la barra
+        for (let i = 0; i < iconCount; i++) {
+            const icon = document.createElement("img");
+            icon.src = iconUrl;
+            icon.className = "icon-img";
+            barDiv.appendChild(icon);
+        }
+
+        // Añadir la barra al contenedor
         const nivelDiv = document.createElement("div");
-        nivelDiv.innerHTML = `<strong>${nivel} año:</strong> ${estudiantes} estudiantes <br> ${icons}`;
+        nivelDiv.innerHTML = `<strong>${nivel} año:</strong> ${estudiantes} estudiantes`;
         pictogramContent.appendChild(nivelDiv);
+        pictogramContent.appendChild(barDiv);
     }
 }
 
