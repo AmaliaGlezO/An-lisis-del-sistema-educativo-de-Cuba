@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gráfico de Pastel - Asistencia por Grados</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    #chart-container {
+      width: 600px;
+      height: 600px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #403D39;
+    }
+    select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #403D39;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart-container">
+    <h1>Asistencia a los Círculos Infantiles</h1>
+    <select id="yearSelector">
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+    </select>
+    <canvas id="pieChart"></canvas>
+  </div>
+
+  <script>
+    // Datos del CSV
+    const data = {
+      "2018": [750, 1460, 1651, 1725,1949],
+      "2019": [322, 798, 946, 1057, 925],
+      "2020": [314, 641, 865, 921, 898],
+      "2021": [335, 49, 643, 734, 571],
+      "2022": [299, 572, 687, 782, 765],
+      "2023": [396, 704, 895, 899, 815],
+    };
+
+    // Colores para cada grado
+    const colores = ['#403D39', '#A68A64', '#EB5E28', '#B8B2A6', '#7E8D85'];
+
+    // Configuración inicial del gráfico
+    const ctx = document.getElementById('pieChart').getContext('2d');
+    const pieChart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: ['2°', '3°', '4°', '5°', '6°'],
+        datasets: [{
+          data: data["2016"], // Inicialmente mostramos 2016
+          backgroundColor: colores,
+          borderColor: '#fff',
+          borderWidth: 2,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              font: {
+                size: 14,
+              },
+              color: '#403D39',
+            }
+          },
+          title: {
+            display: false,
+          }
+        }
+      }
+    });
+
+    // Actualizar el gráfico cuando se seleccione un año
+    document.getElementById('yearSelector').addEventListener('change', function (event) {
+      const selectedYear = event.target.value;
+      pieChart.data.datasets[0].data = data[selectedYear];
+      pieChart.update(); // Actualizar el gráfico
+    });
+  </script>
+</body>
+</html>
