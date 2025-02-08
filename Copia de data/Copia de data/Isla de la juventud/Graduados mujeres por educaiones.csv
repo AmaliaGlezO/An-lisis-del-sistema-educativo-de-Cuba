@@ -1,8 +1,10 @@
-Total,1266,1486,1486,,,,
-Media,‘754,ee,656,661,,,
-‘Secundaria,basica,425,ee,"393,",393,,
-Preuniversitario,154,ee,134,134,,,
-‘Técnica,y,profesional,128,we,79,79,
-Formacién,de,personal,pedagégico,47,we,55,55
-‘Adultos,6,61373,,,,,
-Especial,crt,Le,"413,","43,",,,
+CONCEPTO,2019/20,2020/21,2021/22,2022/23
+Total,1266,,1486,1486
+Primaria,436,,439,439
+Media,754,,656,661
+Secundaria básica,425,,393,393
+Preuniversitario,154,,134,134
+Técnica y profesional,128,,79,79
+Formación de personal pedagógico,47,,55,55
+Adultos,65,,61,373
+Especial,11,,13,13

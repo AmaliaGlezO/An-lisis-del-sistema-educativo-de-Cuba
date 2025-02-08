@@ -1,8 +1,9 @@
-Total,1906,1871,1906,1696,1260,,,
-Ciencias,Técnicas,219,234,234,194,123,,
-Ciencias,Agropecuarias,98,122,122,96,53,,
-Ciencias,Econémicas,265,322,322,304,199,,
-Ciencias,Naturales,y,Matematicas,9,6,0,0,0
-Ciencias,Sociales,y,Humanisticas,413,403,403,390,346
-Pedagogia,484,548,"553,",555,434,,,
-Deporte,y,Cultura,Fisica,240,236,272,157,105
+RAMAS DE LA CIENCIA,2019/20,2020/21,2021/22,2022/23,2023/24
+Total,1906,1871,1906,1696,1260
+Ciencias Técnicas,219,234,234,194,123
+Ciencias Agropecuarias,98,122,122,96,53
+Ciencias Económicas,265,322,322,304,199
+Ciencias Naturales y Matemáticas,9,6,0,0,0
+Ciencias Sociales y Humanísticas,413,403,403,390,346
+Pedagogía,484,548,553,555,434
+Deporte y Cultura Física,240,236,272,157,105

@@ -1,29 +1,31 @@
-Total,7160,7041,6822,5548,5871,,,,,,,,
-Preescolar,y,Circulos,Infantiles,1369,1333,1445,389,1048,,,,,
-Primaria,2682,2647,2941,2507,2350,,,,,,,,
-Urbana,2559,2523,~,2404,2241,,,,,,,,
-Rural,95,96,-,103,109,,,,,,,,
-Escuela,de,Iniciacién,Deportiva,-,-,-,-,100,,,,,
-Escuela,Vocacional,de,Arte,28,-,-,-,6,,,,,
-Media,2623,2589,2031,2232,2161,,,,,,,,
-‘Secundaria,basica,1237,1225,1183,1248,1239,,,,,,,
-De,ello:,En,el,campo,373889,4,,,,,,,
-Escuela,de,Iniciacin,Deportiva,-,6,-,-,44,,,,,
-Escuela,Vocacional,de,Arte,2830,-,-,20,,,,,,
-Preuniversitario,561,605469,"412,398",,,,,,,,,,
-De,ello:,En,el,campo,st,30D,,,,,,,
-Ciencias,exactas,o4,1030,8772,,,,,,,,,
-Escuela,de,Iniciacién,Deportiva,36,-,-,-,°,,,,,
-Técnica,y,profesional,536,428,«309-200,-a7t,,,,,,,
-De,ello:,Técnico,medio,450,360,379,«274265,,,,,,
-Oficios,-,7,2,16,2,,,,,,,,
-Centros,Politécnicos,Otros,Organismos,86,-,-,-,-,,,,,
-Formacién,de,Personal,Pedagégico”,289-331-206,282243,,,,,,,,
-Curso,de,Lengua,"Espafiola,",Historia,de,Cuba,y,Matematicas,3,-,-,-,°
-Adultos,379-367-300,315212,,,,,,,,,,,
-Educacién,obrero,campesina,-,-,-,-,°,,,,,,
-‘Secundaria,obrero,campesina,6,6,13,41,°,,,,,,
-Facultad,obrero,campesina,255-239,«228-195,163,,,,,,,,
-Idioma,118,1120259,10949,,,,,,,,,,
-Especial,107,111105105110,,,,,,,,,,,
-Curso,Prep.Para,Ingreso,Educ.,Superior,-,4,-,-,,,,,
+CONCEPTO,2019/20,2020/21,2021/22,2022/23,2023
+Total,7160,7041,6822,5548,5871
+Preescolar y Círculos Infantiles,1369,1333,1445,389,1048
+Primaria,2682,2647,2941,2507,2350
+Urbana,2559,2523,-,2404,2241
+Rural,95,96,-,103,109
+Escuela de Iniciación Deportiva,-,-,-,-,100
+Escuela Vocacional de Arte,28,-,-,-,55
+Media,2623,2589,2031,2232,2151
+Secundaria básica,1237,1225,1183,1248,1239
+De ello: En el campo,37,38,39,49,37
+Escuela de Iniciación Deportiva,-,69,-,-,44
+Escuela Vocacional de Arte,28,30,-,-,20
+Preuniversitario,561,605,469,412,398
+De ello: En el campo,31,30,29,20,17
+Ciencias exactas,94,103,87,72,51
+Escuela de Iniciación Deportiva,36,-,-,-,0
+Técnica y profesional,536,428,399,290,271
+De ello: Técnico medio,450,360,379,274,265
+Oficios,-,27,20,16,20
+Centros Politécnicos Otros Organismos,86,-,-,-,-
+Formación de Personal Pedagógico,289,331,296,282,243
+Curso de Lengua Española, Historia de Cuba y Matemáticas,3,-,-,-,0
+Adultos,379,357,300,315,212
+Educación obrero campesina,-,-,-,-,0
+Secundaria obrero campesina,6,6,13,11,0
+Facultad obrero campesina,255,239,228,195,163
+Idioma,118,112,59,109,49
+Cursos del Ministerio del Azúcar,-,-,-,-,-
+Especial,107,111,105,105,110
+Curso Prep.Para Ingreso Educ. Superior,-,4,-,-,-
