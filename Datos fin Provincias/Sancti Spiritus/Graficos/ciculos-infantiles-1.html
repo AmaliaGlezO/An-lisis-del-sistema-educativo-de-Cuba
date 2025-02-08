@@ -40,29 +40,29 @@
   <div id="chart-container">
     <h1>Asistencia a los Círculos Infantiles</h1>
     <select id="yearSelector">
-      <option value="2016">2016</option>
       <option value="2017">2017</option>
       <option value="2018">2018</option>
       <option value="2019">2019</option>
       <option value="2020">2020</option>
       <option value="2021">2021</option>
+      <option value="2022">2022</option>
     </select>
     <canvas id="pieChart"></canvas>
   </div>
 
   <script>
-    // Datos del CSV
+    // Datos del CSV (corregidos y sin comas en los números)
     const data = {
-      "2018": [750, 1460, 1651, 1725,1949],
-      "2019": [322, 798, 946, 1057, 925],
-      "2020": [314, 641, 865, 921, 898],
-      "2021": [335, 49, 643, 734, 571],
-      "2022": [299, 572, 687, 782, 765],
-      "2023": [396, 704, 895, 899, 815],
+      "2017": [395, 898, 1075, 1064, 570],
+      "2018": [503, 875, 1092, 1153, 556],
+      "2019": [305, 564, 553, 538, 205],
+      "2020": [397, 782, 818, 863, 531],
+      "2021": [451, 665, 733, 726, 452],
+      "2022": [438, 830, 922, 1017, 497],
     };
 
     // Colores para cada grado
-    const colores = ['#403D39', '#A68A64', '#EB5E28', '#B8B2A6', '#7E8D85'];
+    const colores = ['#403D39', '#A68A64', '#D4A373', '#B8B2A6', '#7E8D85'];
 
     // Configuración inicial del gráfico
     const ctx = document.getElementById('pieChart').getContext('2d');
@@ -71,7 +71,7 @@
       data: {
         labels: ['2°', '3°', '4°', '5°', '6°'],
         datasets: [{
-          data: data["2016"], // Inicialmente mostramos 2016
+          data: data["2017"], // Inicialmente mostramos 2017
           backgroundColor: colores,
           borderColor: '#fff',
           borderWidth: 2,

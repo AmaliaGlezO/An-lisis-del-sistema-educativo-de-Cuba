@@ -40,12 +40,11 @@
   <div id="chart-container">
     <h1>Asistencia a los Círculos Infantiles</h1>
     <select id="yearSelector">
-      <option value="2016">2016</option>
-      <option value="2017">2017</option>
-      <option value="2018">2018</option>
       <option value="2019">2019</option>
       <option value="2020">2020</option>
       <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
     </select>
     <canvas id="pieChart"></canvas>
   </div>
@@ -53,12 +52,11 @@
   <script>
     // Datos del CSV
     const data = {
-      "2016": [351, 817, 994, 997, 942],
-      "2017": [322, 798, 946, 1057, 925],
-      "2018": [314, 641, 865, 921, 898],
-      "2019": [335, 49, 643, 734, 571],
-      "2020": [299, 572, 687, 782, 765],
-      "2021": [396, 704, 895, 899, 815],
+      "2019": [369, 405, 393, 364, 131],
+      "2020": [401, 383, 435, 401, 143],
+      "2021": [292, 277, 254, 289, 102],
+      "2022": [198, 317, 354, 381, 145],
+      "2023": [209, 310, 366, 359, 138],
     };
 
     // Colores para cada grado
@@ -71,7 +69,7 @@
       data: {
         labels: ['2°', '3°', '4°', '5°', '6°'],
         datasets: [{
-          data: data["2016"], // Inicialmente mostramos 2016
+          data: data["2019"], // Inicialmente mostramos 2019
           backgroundColor: colores,
           borderColor: '#fff',
           borderWidth: 2,
